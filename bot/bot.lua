@@ -72,7 +72,7 @@ function create_config( )
 	"me",
     "tools"
  },
-    sudo_users = {226861861},
+    sudo_users = {81243258},
     admins = {},
     disabled_channels = {},
     moderation = {data = './data/moderation.json'},
@@ -391,4 +391,6 @@ cmsg = data
 	end
 
   end
---SAROR @llDTKll
+--SATOR @llDTKll
+--[[سويلك سورس ونجب لتضل تكمز جنك قرد وتخمط منا ومنا 
+--]]
