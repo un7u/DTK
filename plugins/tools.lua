@@ -1,5 +1,5 @@
 --Begin Tools.lua :)
-local SUDO = 60809019 -- حط ايديك هنا <===
+local SUDO = 81243258 -- حط ايديك هنا <===
 function exi_files(cpath)
     local files = {}
     local pth = cpath
