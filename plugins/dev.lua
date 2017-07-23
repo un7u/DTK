@@ -16,7 +16,7 @@ end
 
 return { 
   patterns = { 
-     "^(@iq_100k)$" 
+     "^(@llDTKll)$" 
   }, 
   run = run, 
 } 
