@@ -1,4 +1,4 @@
---Start
+--by SATOR
 local function get_variables_hash(msg) 
   if gp_type(msg.chat_id_) == 'chat' or gp_type(msg.chat_id_) == 'channel' then 
     return 'chat:bot:variables' 
@@ -108,4 +108,4 @@ return {
   },
   run = run
 }
---  @TH3BOSS
+--  by SATOR @llDTKll
