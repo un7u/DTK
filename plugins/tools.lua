@@ -1316,7 +1316,5 @@ patterns = {
 }, 
 run = run, pre_process = pre_process
 }
--- BY TH3BOSS
--- BY @lldev1ll
--- BY @ll60kllbot
--- BY TH3BOSS_CLI
+-- BY @llDTKll
+-- BY @Abska1999
