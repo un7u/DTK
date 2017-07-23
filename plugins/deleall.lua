@@ -1,3 +1,4 @@
+--by SATOR
 local function delmsg (arg,data)
     for k,v in pairs(data.messages_) do
         tdcli.deleteMessages(v.chat_id_,{[0] = v.id_}, dl_cb, cmd)
@@ -23,4 +24,4 @@ return {patterns = {
         '^(تنظيف الكل)$',
     },
     run = th3boss}
---By @TH3BOSS
+--By SATOR
