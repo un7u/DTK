@@ -1,4 +1,4 @@
---Begin Utils.lua By #TEAMBOSS :)
+--dev.lua By SATOR @llDTKll
 function serialize_to_file(data, file, uglify)
   file = io.open(file, 'w+')
   local serialized
@@ -642,3 +642,4 @@ else
          end
      return filterlist
    end
+--by SATOR @llDTKll
