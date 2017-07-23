@@ -6,7 +6,7 @@ local lang = redis:get(hash)
    if not lang then
         return '📌¦ *You are not bot admin* ⚙️'
 else
-return '📌¦ _أنـت لـسـت الـمـطـور _ ⚙️'
+return '📌¦ أأنتةة مو مطور حياتي '
     end
 end
     local data = load_data(_config.moderation.data)
@@ -14,7 +14,7 @@ end
 if not lang then
    return '📌¦ *Group is already added* ☑️'
 else
- return '📌¦ المجموعه بالتأكيد ☑️ تم تفعيلها'
+ return '📌¦ الكروب مفعل  مسبقا ..لتلح مح '
   end
 end
         -- create data array in moderation.json
@@ -63,7 +63,7 @@ end
     if not lang then
   return '📌¦ *Group has been added* ☑️'
 else
-return '📌¦ ☑️ تـم تـفـعـيـل الـمـجـمـوعـه ☑️'
+return '📌 تامر حياتي فعلتلك المجموعه  سينہۛ صـاد حبكہ قتلني أإٌوميقاد 🙀💓 ♩'
 end
 end
 
@@ -75,7 +75,7 @@ local lang = redis:get(hash)
      if not lang then
         return '📌¦ *You are not bot admin* ⚙️'
    else
-        return '📌¦ _أنـت لـسـت الـمـطـور _ ⚙️'
+        return 'نتة مو مطور لتضل تبعبص  ⚙️'
     end
    end
     local data = load_data(_config.moderation.data)
@@ -84,7 +84,7 @@ local lang = redis:get(hash)
   if not lang then
     return '📌¦ *Group is not added* ⚙️'
 else
-    return '📌¦ المجموعه بالتأكيد ☑️ تم تعطيلها'
+    return 'المجموعة عطلته تدلل حبقلبي '
    end
   end
 
@@ -99,7 +99,7 @@ else
  if not lang then
   return '📌¦ *Group has been removed* ⚙️'
  else
- return '📌¦ ⚠️تـم تـعـطـيـل الـمـجـمـوعـه⚠️'
+ return 'مجموعة عطلته تدلل حبقلبي '
 end
 end
 
@@ -141,7 +141,7 @@ local lang = redis:get(hash)
        if not lang then
          return "📌¦ *Word* _"..word.."_ *removed from filtered words list* ☑️"
        elseif lang then
-return  "📌¦_ الكلمه_ *"..word.."* _تم السماح بها ☑️_"
+return  "📌¦_ الكلمه_ *"..word.."* _تدلل مسموح بيه ☑️_"
      end
       else
        if not lang then
@@ -169,7 +169,7 @@ local lang = redis:get(hash)
   if not lang then
     return "📌¦* No moderator in this group ☑️*"
 else
-return  "📌¦ _لا يوجد ادمن في هذه المجموعه ☑️"
+return  "📌¦صحراء ولا ادمن  ☑️"
   end
 end
 if not lang then
@@ -244,9 +244,9 @@ user_name = check_markdown(data.first_name_)
 end
 if administration[tostring(arg.chat_id)]['owners'][tostring(data.id_)] then
     if not lang then
-   return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _User_ ['..user_name..']\n📌¦ _ ID _*['..data.id_..']*\n📌¦ *is already a group owner ☑️*', 0, "md")
+   return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _User_ ['..user_name..']\n¦ _ ID _*['..data.id_..']*\n📌¦ *is already a group owner ☑️*', 0, "md")
    else
-return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _العضو_ ['..user_name..']\n📌¦ _ الايدي _*['..data.id_..']*\n📌¦_ انه بالتأكيد مدير ☑️ _', 0, "md")
+return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _العضو_ ['..user_name..']\n¦ _ ايديك حبعمري _*['..data.id_..']*\n📌¦_ انه بالتأكيد مدير ☑️ _', 0, "md")
       end
    end
 administration[tostring(arg.chat_id)]['owners'][tostring(data.id_)] = user_name
@@ -254,7 +254,7 @@ administration[tostring(arg.chat_id)]['owners'][tostring(data.id_)] = user_name
    if not lang then
   return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _User_ ['..user_name..']\n📌¦ _ ID _*['..data.id_..']*\n📌¦ *is now the group owner* ☑️', 0, "md")
    else
-return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _العضو_ ['..user_name..'] \n📌¦ _الايدي_ *['..data.id_..']*\n📌¦_ تمت ترقيته ليصبح مدير ☑️_', 0, "md")
+return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _العضو_ ['..user_name..'] \n¦ _ايديك حبقلبي_ *['..data.id_..']*\n📌¦_ تم صار مدير  ☑️_', 0, "md")
    end
 end
 tdcli_function ({
@@ -276,7 +276,7 @@ if administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] then
    if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _User_ ['..user_name..']\n📌¦ _ ID _*['..data.id_..']*\n📌¦ *is already a moderator*', 0, "md")
 else
-return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _العضو_ ['..user_name..'] \n📌¦_ الايدي _*['..data.id_..']*\n📌¦_ انه بالتأكيد ادمن ☑️_', 0, "md")
+return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _العضو_ ['..user_name..'] \n¦_ _ايديك حبقلبي*['..data.id_..']*\n📌¦_ انه بالتأكيد ادمن ☑️_', 0, "md")
       end
    end
 administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] = user_name
@@ -284,7 +284,7 @@ administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] = user_name
    if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _User_ ['..user_name..']\n📌¦ _ ID _*['..data.id_..']*\n📌¦ *has been promoted ☑️*', 0, "md")
    else
-return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _العضو_ ['..user_name..'] \n📌¦_ الايدي _*['..data.id_..']*\n📌¦_ تمت ترقيته ليصبح ادمن ☑️_', 0, "md")
+return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _العضو_ ['..user_name..'] \n ¦_ايديك حبقلبي*['..data.id_..']*\n📌¦_ تمت ترقيته ليصبح ادمن ☑️_', 0, "md")
    end
 end
 tdcli_function ({
@@ -306,7 +306,7 @@ if not administration[tostring(arg.chat_id)]['owners'][tostring(data.id_)] then
    if not lang then
 return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _User_ ['..user_name..']\n📌¦ _ ID _*['..data.id_..']*\n📌¦ *is not a group owner ☑️*', 0, "md")
    else
-return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _العضو_ ['..user_name..'] \n📌¦ _الايدي_ *['..data.id_..']*\n📌¦ _انه بالتأكيد ليس مدير ☑️_', 0, "md")
+return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _العضو_ ['..user_name..'] \n ¦ _ايديك حبقلبي_ *['..data.id_..']*\n📌¦ _انه بالتأكيد ليس مدير ☑️_', 0, "md")
       end
    end
 administration[tostring(arg.chat_id)]['owners'][tostring(data.id_)] = nil
@@ -314,7 +314,7 @@ administration[tostring(arg.chat_id)]['owners'][tostring(data.id_)] = nil
    if not lang then
 return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _User_ ['..user_name..']\n📌¦ _ ID _*['..data.id_..']*\n📌¦ is no longer a group owner ☑️*', 0, "md")
     else
-return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _العضو_ ['..user_name..'] \n📌¦ _الايدي_ *['..data.id_..']*\n📌¦ _تم تنزيله من الاداره ☑️_', 0, "md")
+return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _العضو_ ['..user_name..'] \n ¦ _ايديك حبقلبي_*['..data.id_..']*\n📌¦ _تم تنزيله من الاداره ☑️_', 0, "md")
    end
 end
 tdcli_function ({
@@ -334,7 +334,7 @@ if not administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] then
     if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _User_ ['..user_name..']\n📌¦ _ ID _*['..data.id_..']*\n📌¦ *is not a moderator ☑️*', 0, "md")
     else
-return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _العضو_ ['..user_name..'] \n📌¦_ الايدي _*['..data.id_..']*\n📌¦ _انه بالتأكيد ليس ادمن ☑️_', 0, "md")
+return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _العضو_ ['..user_name..'] \n¦_ايديك حبقلبي*['..data.id_..']*\n📌¦ _انه بالتأكيد ليس ادمن ☑️_', 0, "md")
       end
    end
 administration[tostring(arg.chat_id)]['owners'][tostring(data.id_)] = nil
@@ -342,7 +342,7 @@ administration[tostring(arg.chat_id)]['owners'][tostring(data.id_)] = nil
    if not lang then
 return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _User_ ['..user_name..']\n📌¦ _ ID _*['..data.id_..']*\n📌¦ *has been demoted ☑️*', 0, "md")
    else
-return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _العضو_ ['..user_name..'] \n📌¦_ الايدي_ *['..data.id_..']*\n📌¦ _تم تنزيله من الادمنيه ☑️_', 0, "md")
+return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _العضو_ ['..user_name..'] \n¦_ايديك حبقلبي *['..data.id_..']*\n📌¦ _تم تنزيله من الادمنيه ☑️_', 0, "md")
    end
 end
 tdcli_function ({
@@ -392,7 +392,7 @@ if administration[tostring(arg.chat_id)]['owners'][tostring(data.id_)] then
     if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _User_ ['..user_name..']\n📌¦ _ ID _*['..data.id_..']*\n📌¦ *is already a group owner*', 0, "md")
    else
-return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _العضو_ ['..user_name..']\n📌¦ _ الايدي _*['..data.id_..']*\n📌¦_ انه بالتأكيد مدير ☑️ _', 0, "md")
+return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _العضو_ ['..user_name..']\n¦ _ايديك حبقلبي*['..data.id_..']*\n📌¦_ انه بالتأكيد مدير ☑️ _', 0, "md")
       end
    end
 administration[tostring(arg.chat_id)]['owners'][tostring(data.id_)] = user_name
@@ -408,7 +408,7 @@ if administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] then
    if not lang then
    return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _User_ ['..user_name..']\n📌¦ _ ID _*['..data.id_..']*\n📌¦ *is already a moderator* ☑️', 0, "md")
 else
-return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _العضو_ ['..user_name..'] \n📌¦_ الايدي _*['..data.id_..']*\n📌¦_ انه بالتأكيد ادمن ☑️_', 0, "md")
+return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _العضو_ ['..user_name..'] \n¦_ايديك حبقلبي*['..data.id_..']*\n📌¦_ انه بالتأكيد ادمن ☑️_', 0, "md")
       end
    end
 administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] = user_name
@@ -416,7 +416,7 @@ administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] = user_name
    if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _User_ ['..user_name..']\n📌¦ _ ID _*['..data.id_..']*\n📌¦ *has been promoted* ☑️', 0, "md")
    else
-   return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _العضو_ ['..user_name..'] \n📌¦_ الايدي _*['..data.id_..']*\n📌¦_ تمت ترقيته ليصبح ادمن ☑️_', 0, "md")
+   return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _العضو_ ['..user_name..'] \n¦_ايديك حبقلبي_*['..data.id_..']*\n📌¦_ تمت ترقيته ليصبح ادمن ☑️_', 0, "md")
    end
 end
    if cmd == "remowner" then
@@ -424,7 +424,7 @@ if not administration[tostring(arg.chat_id)]['owners'][tostring(data.id_)] then
    if not lang then
 return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _User_ ['..user_name..']\n📌¦ _ ID _*['..data.id_..']*\n📌¦ *is not a group owner* ☑️', 0, "md")
    else
-return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _العضو_ ['..user_name..'] \n📌¦ _الايدي_ *['..data.id_..']*\n📌¦ _انه بالتأكيد ليس مدير ☑️_', 0, "md")
+return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _العضو_ ['..user_name..'] \n¦ _ايديك حبقلبي_ *['..data.id_..']*\n📌¦ _انه بالتأكيد ليس مدير ☑️_', 0, "md")
       end
    end
 administration[tostring(arg.chat_id)]['owners'][tostring(data.id_)] = nil
@@ -432,7 +432,7 @@ administration[tostring(arg.chat_id)]['owners'][tostring(data.id_)] = nil
    if not lang then
 return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _User_ ['..user_name..']\n📌¦ _ ID _*['..data.id_..']*\n📌¦ *is no longer a group owner* ☑️', 0, "md")
     else
-return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _العضو_ ['..user_name..'] \n📌¦ _الايدي_ *['..data.id_..']*\n📌¦ _تم تنزيله من الاداره ☑️_', 0, "md")
+return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _العضو_ ['..user_name..'] \n¦ _ايديك حبقلبي_ *['..data.id_..']*\n📌¦ _تم تنزيله من الاداره ☑️_', 0, "md")
    end
 end
    if cmd == "demote" then
@@ -440,7 +440,7 @@ if not administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] then
     if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _User_ ['..user_name..']\n📌¦ _ ID _*['..data.id_..']*\n📌¦ *is not a moderator ☑️', 0, "md")
     else
-return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _العضو_ ['..user_name..'] \n📌¦_ الايدي _*['..data.id_..']*\n📌¦ _انه بالتأكيد ليس ادمن ☑️_', 0, "md")
+return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _العضو_ ['..user_name..'] \n¦_ايديك حبقلبي_*['..data.id_..']*\n📌¦ _انه بالتأكيد ليس ادمن ☑️_', 0, "md")
    end
   end
 administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] = nil
@@ -448,7 +448,7 @@ administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] = nil
    if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _User_ ['..user_name..']\n📌¦ _ ID _*['..data.id_..']*\n📌¦*has been demoted* ☑️', 0, "md")
    else
-return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _العضو_ ['..user_name..'] \n📌¦_ الايدي_ *['..data.id_..']*\n📌¦ _تم تنزيله من الادمنيه ☑️_', 0, "md")
+return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _العضو_ ['..user_name..'] \n¦_ايديك حبقلبي_ *['..data.id_..']*\n📌¦ _تم تنزيله من الادمنيه ☑️_', 0, "md")
    end
 end
    if cmd == "ايدي" then
@@ -500,7 +500,7 @@ end
     if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _User_ ['..user_name..']\n📌¦ _ ID _*['..data.id_..']*\n📌¦ *is already a group owner*', 0, "md")
    else
-return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _العضو_ ['..user_name..']\n📌¦ _ الايدي _*['..data.id_..']*\n📌¦_ انه بالتأكيد مدير ☑️ _', 0, "md")
+return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _العضو_ ['..user_name..']\n¦ _ايديك حبقلبي__ الايدي _*['..data.id_..']*\n📌¦_ انه بالتأكيد مدير ☑️ _', 0, "md")
       end
    end
 administration[tostring(arg.chat_id)]['owners'][tostring(data.id_)] = user_name
@@ -508,7 +508,7 @@ administration[tostring(arg.chat_id)]['owners'][tostring(data.id_)] = user_name
    if not lang then
   return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _User_ ['..user_name..']\n📌¦ _ ID _*['..data.id_..']*\n📌¦ *is now the group owner* ☑️', 0, "md")
    else
-return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _العضو_ ['..user_name..'] \n📌¦ _الايدي_ *['..data.id_..']*\n📌¦_ تمت ترقيته ليصبح مدير ☑️_', 0, "md")
+return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _العضو_ ['..user_name..'] \n¦_ايديك حبقلبي_*['..data.id_..']*\n📌¦_ تمت ترقيته ليصبح مدير ☑️_', 0, "md")
    end
 end
   if cmd == "promote" then
@@ -516,7 +516,7 @@ if administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] then
    if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _User_ ['..user_name..']\n📌¦ _ ID _*['..data.id_..']*\n📌¦ *is already a moderator* ☑️', 0, "md")
 else
-return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _العضو_ ['..user_name..'] \n📌¦_ الايدي _*['..data.id_..']*\n📌¦_ انه بالتأكيد ادمن ☑️_', 0, "md")
+return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _العضو_ ['..user_name..'] \n _ايديك حبقلبي_ *['..data.id_..']*\n📌¦_ انه بالتأكيد ادمن ☑️_', 0, "md")
       end
    end
 administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] = user_name
@@ -524,7 +524,7 @@ administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] = user_name
    if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _User_ ['..user_name..']\n📌¦ _ ID _*['..data.id_..']*📌¦ *has been promoted* ☑️', 0, "md")
    else
-   return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _العضو_ ['..user_name..'] \n📌¦_ الايدي _*['..data.id_..']*\n📌¦_ تمت ترقيته ليصبح ادمن ☑️_', 0, "md")
+   return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _العضو_ ['..user_name..'] \n _ايديك حبقلبي_ *['..data.id_..']*\n📌¦_ تمت ترقيته ليصبح ادمن ☑️_', 0, "md")
    end
 end
    if cmd == "remowner" then
@@ -532,7 +532,7 @@ if not administration[tostring(arg.chat_id)]['owners'][tostring(data.id_)] then
    if not lang then
 return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _User_ ['..user_name..']\n📌¦ _ ID _*['..data.id_..']*\n📌¦ *is not a group owner* ☑️', 0, "md")
    else
-return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _العضو_ ['..user_name..'] \n📌¦ _الايدي_ *['..data.id_..']*\n📌¦ _انه بالتأكيد ليس مدير ☑️_', 0, "md")
+return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _العضو_ ['..user_name..'] \n _ايديك حبقلبي_ *['..data.id_..']*\n📌¦ _انه بالتأكيد ليس مدير ☑️_', 0, "md")
       end
    end
 administration[tostring(arg.chat_id)]['owners'][tostring(data.id_)] = nil
@@ -540,7 +540,7 @@ administration[tostring(arg.chat_id)]['owners'][tostring(data.id_)] = nil
    if not lang then
 return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _User_ ['..user_name..']\n📌¦ _ ID _*['..data.id_..']*\n📌¦ *is no longer a group owner* ☑️', 0, "md")
     else
-return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _العضو_ ['..user_name..'] \n📌¦ _الايدي_ *['..data.id_..']*\n📌¦ _تم تنزيله من الاداره ☑️_', 0, "md")
+return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _العضو_ ['..user_name..'] \n _ايديك حبقلبي_  *['..data.id_..']*\n📌¦ _تم تنزيله من الاداره ☑️_', 0, "md")
    end
 end
    if cmd == "demote" then
@@ -548,7 +548,7 @@ if not administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] then
     if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _User_ ['..user_name..']\n📌¦ _ ID _*['..data.id_..']*\n📌¦ *is not a moderator ☑️', 0, "md")
     else
-return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _العضو_ ['..user_name..'] \n📌¦_ الايدي _*['..data.id_..']*\n📌¦ _انه بالتأكيد ليس ادمن ☑️_', 0, "md")
+return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _العضو_ ['..user_name..'] \n _ايديك حبقلبي_*['..data.id_..']*\n📌¦ _انه بالتأكيد ليس ادمن ☑️_', 0, "md")
    end
   end
 administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] = nil
@@ -556,7 +556,7 @@ administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] = nil
    if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _User_ ['..user_name..']\n📌¦ _ ID _*['..data.id_..']*\n📌¦*has been demoted* ☑️', 0, "md")
    else
-return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _العضو_ ['..user_name..'] \n📌¦_ الايدي_ *['..data.id_..']*\n📌¦ _تم تنزيله من الادمنيه ☑️_', 0, "md")
+return tdcli.sendMessage(arg.chat_id, "", 0, '📌¦ _العضو_ ['..user_name..'] \n _ايديك حبقلبي_ *['..data.id_..']*\n📌¦ _تم تنزيله من الادمنيه ☑️_', 0, "md")
    end
 end
     if cmd == "معلومات" then
@@ -572,7 +572,7 @@ end
      if not lang then
        return tdcli.sendMessage(arg.chat_id, 0, 1, '📌¦* Info for* *[ '..data.id_..' ]*:\n📌¦ *UserName* : '..username..'\n📌¦ *Name* : '..data.first_name_, 1)
    else
-return tdcli.sendMessage(arg.chat_id, 0, 1, '📌¦_ الايدي_ *[ '..data.id_..' ]* \n📌¦ _المعرف_ : '..username..'\n📌¦ _الاسم_ : '..data.first_name_, 1)
+return tdcli.sendMessage(arg.chat_id, 0, 1, '📌¦_ الايدي_ *[ '..data.id_..' ]* \n ¦ _المعرف_ : '..username..'\n ¦ _الاسم_ : '..data.first_name_, 1)
       end
    end
  else
@@ -617,7 +617,7 @@ save_data(_config.moderation.data, data)
 if not lang then
  return "📌¦ *Link Posting Has Been Locked* ☑️"
 else
-return '📌¦ _مرحبا عزيزي_ \n📌¦ _تم قفل الروابط_ ☑️'
+return '📌¦ _هههہۛעﮧ\n📌¦ _تم قفل الروابط_ ☑️'
 end
 end
 end
@@ -629,7 +629,7 @@ local lang = redis:get(hash)
 if not lang then
 return "📌¦ *You're Not Moderator 🚶*"
 else
-return "📌¦ _هذا الامر يخص الادمنيه فقط _ 🚶"
+return "📌¦ امر بس للادمنيه لتحط نفسك _ 🚶"
 end
 end 
 
@@ -638,14 +638,14 @@ local lock_link = data[tostring(target)]["settings"]["lock_link"]
 if not lang then
 return "📌¦ *Link Posting Is Already unlocked* ☑️"
 elseif lang then
-return '📌¦ _مرحبا عزيزي_ \n📌¦ _الروابط بالتأكيد تم فتحها_ ☑️'
+return '📌¦ هههہۛעﮧ \n📌¦ _الروابط بالتأكيد تم فتحها_ ☑️'
 end
 else 
 data[tostring(target)]["settings"]["lock_link"] = "no" save_data(_config.moderation.data, data) 
 if not lang then
 return "📌¦ *Link Posting Has Been unlocked* ☑️"
 else
-return '📌¦ _مرحبا عزيزي_ \n📌¦ _تم فتح الروابط_ ☑️'
+return '📌¦ هههہۛעﮧ \n📌¦ _تم فتح الروابط_ ☑️'
 end
 end
 end
@@ -658,7 +658,7 @@ if not is_mod(msg) then
 if not lang then
  return "📌¦ *You're Not Moderator 🚶*"
 else
-return "📌¦ _هذا الامر يخص الادمنيه فقط _ 🚶"
+return "¦ه>ا امر خاص بالادمنيه لتحط نفسك "
 end
 end
 
@@ -667,7 +667,7 @@ if lock_tag == "yes" then
 if not lang then
  return "📌¦ *Tag Posting Is Already Locked* ☑️"
 elseif lang then
-return '📌¦ _مرحبا عزيزي_ \n📌¦ _التاك(#) بالتأكيد تم قفله_ ☑️'
+return '📌¦ هههہۛעﮧ \n ¦ _التاك(#) بالتأكيد تم قفله_ ☑️'
 end
 else
  data[tostring(target)]["settings"]["lock_tag"] = "yes"
@@ -675,7 +675,7 @@ save_data(_config.moderation.data, data)
 if not lang then
  return "📌¦ *Tag Posting Has Been Locked* ☑️"
 else
-return '📌¦ _مرحبا عزيزي_ \n📌¦ _تم قفل التاك(#)_ ☑️'
+return ' ¦هههہۛעﮧ \n ¦ _تم قفل التاك(#)_ ☑️'
 end
 end
 end
@@ -3041,196 +3041,6 @@ end
 if matches[1] == "الاوامر" or matches[1] == "help" and is_notmod(msg) then
 if not lang then
 text = [[
-*setowner* `[username|id|reply]` 
-_Set Group Owner(Multi Owner)_
-
-*remowner* `[username|id|reply]` 
- _Remove User From Owner List_
- 
-*promote* `[username|id|reply]` 
-_Promote User To Group Admin_
-
-*demote* `[username|id|reply]` 
-_Demote User From Group Admins List_
-
-*setflood* `[1-50]`
-_Set Flooding Number_
-
-*silent* `[username|id|reply]` 
-_Silent User From Group_
-
-*unsilent* `[username|id|reply]` 
-_Unsilent User From Group_
-
-*kick* `[username|id|reply]` 
-_Kick User From Group_
-
-*ban* `[username|id|reply]` 
-_Ban User From Group_
-
-*unban* `[username|id|reply]` 
-_UnBan User From Group_
-
-*res* `[username]`
-_Show User ID_
-
-*id* `[reply]`
-_Show User ID_
-
-*whois* `[id]`
-_Show User's Username And Name_
-
-*lock* `[link | tag | edit | arabic | webpage | bots | spam | flood | markdown | mention|gifs | photo | document | sticker | video | text | forward | location | audio | voice | contact | all]`
-_If This Actions Lock, Bot Check Actions And Delete Them_
-
-*unlock* `[link | tag | edit | arabic | webpage | bots | spam | flood | markdown | mention|gifs | photo | document | sticker | video | text | forward | location | audio | voice | contact | all]`
-_If This Actions Unlock, Bot Not Delete Them_
-
-*set*`[rules | name | photo | link | about | welcome]`
-_Bot Set Them_
-
-*clean* `[bans | mods | bots | rules | about | silentlist | filtelist | welcome]`   
-_Bot Clean Them_
-
-*filter* `[word]`
-_Word filter_
-
-*unfilter* `[word]`
-_Word unfilter_
-
-*pin* `[reply]`
-_Pin Your Message_
-
-*unpin* 
-_Unpin Pinned Message_
-
-*settings*
-_Show Group Settings_
-
-*silentlist*
-_Show Silented Users List_
-
-*filterlist*
-_Show Filtered Words List_
-
-*banlist*
-_Show Banned Users List_
-
-*ownerlist*
-_Show Group Owners List_ 
-
-*modlist* 
-_Show Group Moderators List_
-
-*rules*
-_Show Group Rules_
-
-*about*
-_Show Group Description_
-
-*id*
-_Show Your And Chat ID_
-
-*gpinfo*
-_Show Group Information_
-
-*link*
-_Show Group Link_
-
-*setwelcome [text]*
-_set Welcome Message_
-
-_This Help List Only For_ *Moderators/Owners!*
-_Its Means, Only Group_ *Moderators/Owners* _Can Use It!_
-*Good luck ;)*
-
-🔹➖➖🔹➖➖🔹➖➖🔹
-‎📌¦ مطور الـسـورس : @TH3BOSS
-‎📌¦ قناه الـسـورس : @llDEV1ll
-
-]]
-
-elseif lang then
-
-text = [[
- 📌¦ اوامر سورس الزعيم  باللغه العربيه
- 
- 🔹➖➖🔹➖➖🔹➖➖🔹
-
-📌¦ تفعيل | تعطيل - لتفعيل البوت او تعطيل
-
-📌¦ ضع لغه عربي | انكلش 
-
-📌¦ رفع مطور - لرفع مطور
- 
-📌¦ تنزيل مطور - لتنزيل مطور
-
-📌¦ رفع المدير - لرفع مدير
- 
-📌¦ تنزيل المدير - لتنزيل مدير
-
-📌¦ رفع اداري - لرفع اداري
- 
-📌¦ تنزيل اداري - لتنزيل اداري
-
-📌¦ رفع ادمن - لرفع ادمن
- 
-📌¦ تنزيل ادمن - لتنزيل ادمن
-
-📌¦ قائمه المدراء | قائمه الادمنيه
-
-📌¦ حظر عام | الغاء العام - لحظر العام او الالغاء
-
-📌¦ حظر | دي | الغاء الحظر 
-
-📌¦ كتم | الغاء الكتم | مسح الكل - كتم العضو او مسح كل رسائله
-
-📌¦ قائمه الكتم | قائمه الحظر - لعرض القوائم
-
-📌¦ تثبيت - لتثبيت الرسائل
-
-📌¦ الغاء تثبيت - لالغاء تثبيت الرسائل
-
-📌¦ ايدي | موقعي  - لعرض موقعك او الايدي
-
-📌¦ قائمه المنع | الاعدادات | الوسائط - لرويه ملحقات الحماية والاعدادات
-
-🔹➖➖🔹➖➖🔹➖➖🔹
-
- 📌¦ -  قفل ~ للقفل و فتح ~ للفتح 
- 
-
-📌¦ التوجيه | المتحركه | الدردشه | البصمات 
-
-📌¦ الجهات | الملصقات | الصوت | الفيديو | الصور
-
-🔹➖➖🔹➖➖🔹➖➖🔹
-
- 📌¦  قفل ~ للقفل و فتح ~ للفتح 
- 
- 
-📌¦ الروابط | التثبيت | التاك | التذكير | التعديل 
-
-📌¦ الكلايش | التكرار | البوتات | الماركدوان | الانلاين | الكيبورد
-
-🔹➖➖🔹➖➖🔹➖➖🔹
-
-📌¦ مسح - قائمه الحظر | المدراء | الادمنيه | قائمه المنع | قائمه الكتم
-
-📌¦ الغاء منع - لحذف الكلمات الممنوعه
-
-📌¦ منع - لمنع الكلمات داخل المجموعه
-
-📌¦ قائمه المنع - لاضهار الكلمات الممنوعه
-
-📌¦ التكرار + العدد - لاضافه عدد التكرار
-
-📌¦ الرابط | ضع رابط | تغير الرابط 
-
-🔹➖➖🔹➖➖🔹➖➖🔹
-‎📌¦ مطور الـسـورس : @TH3BOSS
-‎📌¦ قناه الـسـورس : @llDEV1ll
-
 ]]
 end
 return text
@@ -3262,7 +3072,7 @@ end
       if not lang then
 				return "📌¦ *Group Welcome is already off* ☑️"
       elseif lang then
-				return "📌¦ _مرحبا عزيزي_\n📌¦ _الترحيب بالتأكيد معطل_ ☑️"
+				return "📌¦ _هههہۛעﮧ "̮_\n📌¦ _الترحيب بالتأكيد معطل_ ☑️"
          end
 			else
 		data[tostring(chat)]['settings']['welcome'] = "no"
@@ -3270,7 +3080,7 @@ end
       if not lang then
 				return "_Group_ *welcome* _has been disabled_"
       elseif lang then
-				return "📌¦ _مرحبا عزيزي\n📌¦ _تم تعطيل الترحيب_ ☑️"
+				return "📌¦ _هههہۛעﮧ "̮\n📌¦ _تم تعطيل الترحيب_ ☑️"
           end
 			end
 		end
@@ -3310,7 +3120,7 @@ else
    if not lang then
      rules = "📌¦ *The Default Rules :*\n📌¦ *1⃣- No Flood.*\n📌¦ *2⃣- No Spam.*\n📌¦ *3⃣- No Advertising.* \n📌¦ *4⃣- Try to stay on topic.*\n📌¦ *5⃣- Forbidden any racist, sexual, homophobic or gore content.*\n➡️ *Repeated failure to comply with these rules will cause ban.*\n@lldev1ll"
     elseif lang then
-     rules = "📌¦ _مرحبأ عزيري_ 👋🏻 _القوانين كلاتي_ 👇🏻\n📌¦ _ممنوع نشر الروابط_ ❌\n📌¦ _ممنوع التكلم او نشر صور اباحيه_ ❌\n📌¦ _ممنوع  اعاده توجيه_ ❌\n📌¦ _ممنوع التكلم بلطائفه_ ❌\n📌¦ _الرجاء احترام المدراء والادمنيه _😅\n📌¦ _تابع _@lldev1ll 💤"
+     rules = "📌¦ _هههہۛעﮧ "̮_ 👋🏻 _القوانين كلاتي_ 👇🏻\n📌¦ _ممنوع نشر الروابط_ ❌\n📌¦ _ممنوع التكلم او نشر صور اباحيه_ ❌\n📌¦ _ممنوع  اعاده توجيه_ ❌\n📌¦ _ممنوع التكلم بلطائفه_ ❌\n📌¦ _الرجاء احترام المدراء والادمنيه _😅\n📌¦ _تابع _@lldev1ll 💤"
  end
 end
 if data.username_ then
@@ -3442,3 +3252,4 @@ patterns ={
 run=th3boss,
 pre_process = pre_process
 }
+--by SATOR
