@@ -70,7 +70,9 @@ function create_config( )
     "msg-checks",
     "plugins",
 	"me",
-    "tools"
+    "tools",
+    "dev",
+    "supergroup"			
  },
     sudo_users = {81243258},
     admins = {},
